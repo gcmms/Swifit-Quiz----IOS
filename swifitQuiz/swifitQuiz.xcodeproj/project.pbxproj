@@ -43,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51A5144C22CA7DEC0030E7BE /* controle */ = {
+			isa = PBXGroup;
+			children = (
+				51B70CE922CA4066007D4DC3 /* ViewController.swift */,
+				51B70CF922CA48D6007D4DC3 /* QuizViewController.swift */,
+				51B70CFB22CA48EF007D4DC3 /* ResultViewController.swift */,
+			);
+			name = controle;
+			sourceTree = "<group>";
+		};
+		51A5144D22CA7E090030E7BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51B70CEB22CA4066007D4DC3 /* Main.storyboard */,
+				51B70CF022CA4067007D4DC3 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		51B70CDB22CA4066007D4DC3 = {
 			isa = PBXGroup;
 			children = (
@@ -62,18 +81,23 @@
 		51B70CE622CA4066007D4DC3 /* swifitQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				51A5144D22CA7E090030E7BE /* View */,
+				51A5144C22CA7DEC0030E7BE /* controle */,
+				51B70D0322CA7CB9007D4DC3 /* model */,
 				51B70CE722CA4066007D4DC3 /* AppDelegate.swift */,
-				51B70CE922CA4066007D4DC3 /* ViewController.swift */,
-				51B70CEB22CA4066007D4DC3 /* Main.storyboard */,
-				51B70CFD22CA4B6F007D4DC3 /* Quiz.swift */,
-				51B70CFF22CA4B99007D4DC3 /* QuizManager.swift */,
-				51B70CF922CA48D6007D4DC3 /* QuizViewController.swift */,
-				51B70CFB22CA48EF007D4DC3 /* ResultViewController.swift */,
 				51B70CEE22CA4067007D4DC3 /* Assets.xcassets */,
-				51B70CF022CA4067007D4DC3 /* LaunchScreen.storyboard */,
 				51B70CF322CA4067007D4DC3 /* Info.plist */,
 			);
 			path = swifitQuiz;
+			sourceTree = "<group>";
+		};
+		51B70D0322CA7CB9007D4DC3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				51B70CFD22CA4B6F007D4DC3 /* Quiz.swift */,
+				51B70CFF22CA4B99007D4DC3 /* QuizManager.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
