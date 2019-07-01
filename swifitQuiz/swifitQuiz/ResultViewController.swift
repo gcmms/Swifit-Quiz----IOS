@@ -21,12 +21,15 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         lbRespondidas.text = "Perguntas Respondidas: \(totalPerguntas)"
         lbCorretas.text = "Pergundas corretas \(totalPerguntasCorretas)"
-        
-        
+        let erradas = totalPerguntasCorretas - totalPerguntas
+        lbErradas.text = "Perguntas erradas \(erradas)"
+        let pontuacao = totalPerguntasCorretas * 100/totalPerguntas
+        lbPontos.text = "\(pontuacao)%"
     }
     
 
     @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
