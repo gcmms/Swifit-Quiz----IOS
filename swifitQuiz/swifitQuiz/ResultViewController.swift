@@ -14,10 +14,15 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var lbErradas: UILabel!
     @IBOutlet weak var lbPontos: UILabel!
     
+    var totalPerguntasCorretas: Int = 0
+    var totalPerguntas: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        lbRespondidas.text = "Perguntas Respondidas: \(totalPerguntas)"
+        lbCorretas.text = "Pergundas corretas \(totalPerguntasCorretas)"
+        
+        
     }
     
 

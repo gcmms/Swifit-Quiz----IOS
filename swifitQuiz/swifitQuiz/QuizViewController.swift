@@ -8,9 +8,7 @@ class QuizViewController: UIViewController {
     let quizManager = QuizManager()
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated )
@@ -37,6 +35,15 @@ class QuizViewController: UIViewController {
     
     func showResults(){
         performSegue(withIdentifier: "resultSegue", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController = segue.destination as! ResultViewController
+        resultViewController.totalPerguntas = quizManager.totalRespostas
+        resultViewController.totalPerguntasCorretas = quizManager.totalPerguntasCertas
+        
+        
     }
     
     @IBAction func btAlternativa(_ sender: UIButton) {
